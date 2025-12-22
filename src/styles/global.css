@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Fade-in animation classes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.fade-in-delay {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-delay.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hero animation initial states */
+.hero-title,
+.hero-description,
+.hero-cta {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.hero-left-video,
+.hero-right-video {
+    opacity: 0;
+}
+
+.hero-left-video {
+    transform: translateX(-30px);
+}
+
+.hero-right-video {
+    transform: translateX(30px);
+}
