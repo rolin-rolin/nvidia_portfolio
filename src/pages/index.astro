@@ -103,39 +103,76 @@ import PersonCard from '../components/PersonCard.astro';
 	
 	<PersonCard 
 		id="person2"
-		name="Your Friend"
-		title="Friend's Role/Title"
-		description="An equally passionate individual who brings unique perspectives and talents to every project. Together, we've created something amazing."
+		name="Andoni Christou"
+		title="Andoni"
+		description=""
 		gradient="bg-gradient-to-br from-blue-500 to-cyan-500"
 		borderColorClass="border-blue-500"
-		linkedin="https://linkedin.com/in/friendprofile"
-		email="friend.email@example.com"
-		github=""
+		linkedin="https://linkedin.com/in/andoni-christou"
+		email="andonilc71@gmail.com"
+		image="/nvidia_website/public/LinkedInPic-Andoni.JPG"
+		github="https://github.com/andonilc7"
 		education={[
 			{
-				school: "University Name",
-				degree: "Bachelor of Science in Engineering",
-				period: "2019 - 2023"
+				school: "University of Notre Dame",
+				degree: "Bachelor of Science in Computer Science",
+				period: "2023 - 2027",
+				details: ["Minor in Innovation & Entrepreneurship", "Treasurer, Orthodox Christian Fellowship; Band Leader, Notre Dame Céilí Band; Notre Dame Sailing Team", "Relevant coursework: Database Concepts, Intro to AI, Data Structures, Systems Programming, Logic Design, Computer Architecture"]
 			}
 		]}
 		experience={[
 			{
-				company: "Company Name",
-				position: "Position Title",
-				period: "2023 - Present",
-				location: "City, State",
+				company: "Lockheed Martin",
+				position: "SWE Intern (Full-Time Summer)",
+				period: "May 2025 – August 2025",
+				location: "Bethesda, MD (Remote)",
 				achievements: [
-					"Achievement 1",
-					"Achievement 2"
+					`Built a data pipeline to process SAP development data and Confluence specs via SAP Endpoint and Confluence API.
+Generated natural language descriptions of code and converted SAP XML dependencies into Python. Integrated outputs
+into an internal AI tool’s vector store with OpenAI API, enabling RAG (Retrieval-Augmented Generation) for developer
+assistance; ranked top 6 out of ~50 participants in an internal AI challenge.`,
+`Contributed to team objectives in Agile ceremonies (ART syncs, Scrum calls) and completed Agile training to support
+iterative team delivery.`
 				]
-			}
+			},
+			{
+				company: "Lockheed Martin",
+				position: "SWE Intern (Part-Time School-Year)",
+				period: "August 2024 – May 2025",
+				location: "Bethesda, MD (Remote)",
+				achievements: [
+					`Leveraged Python to automate Excel tasks related to managing charge codes, streamlining operations to reduce manual
+effort and minimize errors, saving ~2-3 hours per week.`,
+`Implemented a dynamic dashboard using a JavaScript-based language in SAP Analytics Cloud, enabling real-time visibility
+into employee charging trends; saved ~10 hours per month by eliminating redundant Excel visualization.`
+				]
+			},
+			{
+				company: "Lockheed Martin",
+				position: "SWE Intern (Full-Time Summer)",
+				period: "May 2024 – August 2024",
+				location: "Bethesda, MD (Remote)",
+				achievements: [
+					`Developed reports for the Capital Long Range Planning team leveraging CDS views and SAP UI5, replacing Excel and
+enabling accurate tracking of in-service dates across full asset portfolio for timely depreciation and regulatory compliance.`,
+`Developed SAP UI5 libraries for a bucket-hierarchy feature, streamlining report development for the Asset Management
+team and saving ~14 hours across 7 reports.`
+				]
+			},
 		]}
 		projects={[
 			{
-				name: "Project Name",
-				description: "Project description here.",
-				technologies: ["Tech 1", "Tech 2"]
-			}
+				name: "GoGolf: Geospatial Strategy & Analytics Platform",
+				description: "Co-developed a 3D geospatial golf platform integrating OpenStreetMap and USGS data. I engineered a custom interpolation and DBSCAN clustering pipeline to normalize player paths, and built the full-stack architecture using Django and React-Leaflet to power animated, data-driven round replays.",
+				image: "/nvidia_website/public/go-golf-smart-strategy.png",
+				technologies: ["Django", "React", "Python", "PostgreSQL", "Leaflet", "scikit-learn"]
+			},
+			{
+        name: "Sub-Saharan Inventory Network",
+				image: "/nvidia_website/public/pharm-stock.png",
+        description: "A full-stack platform reducing medication search times in Sub-Saharan Africa. I built the end-to-end architecture including a multi-step approval workflow and an automated data pipeline that scraped and sanitized the WHO Essential Medicines List for 450+ categorized drugs.",
+        technologies: ["Node.js", "React", "Prisma", "PostgreSQL", "Cheerio"]
+    }
 		]}
 		skills={[
 			{

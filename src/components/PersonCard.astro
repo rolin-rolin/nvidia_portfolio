@@ -200,7 +200,7 @@ const { name, title, description, image, linkedin, email, github, education = []
 								<p class="text-gray-600 leading-relaxed text-base md:text-lg mb-3" set:html={project.description.replace(/\n/g, '<br>')}></p>
 								{project.image && (
 									<div class="my-4 rounded-lg overflow-hidden">
-										<img src={project.image} alt={project.name} class="w-full h-auto object-cover min-h-[250px] md:min-h-[300px]" />
+										<img src={project.image} alt={project.name} class="w-full h-auto object-contain min-h-[250px] md:min-h-[300px]" />
 									</div>
 								)}
 								{project.technologies && project.technologies.length > 0 && (
