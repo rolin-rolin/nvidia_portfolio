@@ -1,6 +1,6 @@
-# Joint Portfolio Website
+# Nvidia Joint Portfolio Website
 
-A sleek, modern joint portfolio website built with Astro and Tailwind CSS, showcasing our experiences.
+Joint portfolio website built with Astro and Tailwind CSS, showcasing our experiences.
 
 ## 📦 Installation
 
