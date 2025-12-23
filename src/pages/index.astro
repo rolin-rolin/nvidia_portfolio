@@ -12,7 +12,7 @@ import PersonCard from '../components/PersonCard.astro';
 	<PersonCard 
 		id="person1"
 		name="Ronald Lin"
-		title="Zon"
+		title="Ron"
 		description="Hey, I'm Ron! I love building but also find joy in talking with people and pinpointing what they need in their lives. I imagine a future with hyper-personalized technology and am excited to be a part of it."
 		gradient="bg-gradient-to-r from-purple-500 to-pink-500"
 		borderColorClass="border-purple-500"
@@ -25,7 +25,7 @@ import PersonCard from '../components/PersonCard.astro';
 				school: "University of Notre Dame",
 				degree: "Bachelor of Arts in Computer Science",
 				period: "2023 - 2027",
-				details: ["Double Major in Economics", "Club Soccer, Marching Band", "Relevant coursework: Data Structures, Algorithms, Operating Systems"]
+				details: ["Double Major in Economics", "Club Soccer, Marching Band", "Relevant coursework: Data Structures, Algorithms, Operating Systems, Systems Programming, Intro to AI"]
 			}
 		]}
 		experience={[
@@ -34,10 +34,10 @@ import PersonCard from '../components/PersonCard.astro';
 				position: "Tech & Data Solutions Intern",
 				period: "Jun 2025 - Aug 2025",
 				location: "San Jose, CA",
-				description: " Worked closely with clients to understand key pain points and use technology to build solutions",
 				achievements: [
 					"Led pro-bono project for a client serving 7M+ users and 190k+ professionals",
 					"Developed personalization algorithm projecting +40% in user retention",
+					"Devised AI solutions for a client, defined success metrics and measurement frameworks; modeled adoption scenarios with Python Monte Carlo simulation, estimating 2x revenue/employee"
 				]
 			},
 			{
@@ -51,6 +51,17 @@ import PersonCard from '../components/PersonCard.astro';
 					"Built knowledge bases and used RAG to support 10 unique models", 
 					"Shipped an email verification feature using Django and React - reduced new account fraud by 5x",
 					"Led new social media content strategy - 100k+ views and increased daily active users by 50%",
+				]
+			},
+			{
+				company: "Amazon",
+				position: "Product Management Extern",
+				period: "Jan 2024 - April 2024",
+				location: "Boston, MA",
+				achievements: [
+					"Researched college student use cases, prototyped an enhancement for Echo Show to improve daily engagement",
+ 					"Conducted user surveys and A/B tests to uncover key pain points and identify feature opportunities", 
+ 					"Presented product recommendations to Amazon leadership in Boston, driving a 5x increase in projected adoption rate"
 				]
 			}
 		]}
