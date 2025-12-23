@@ -9,8 +9,8 @@ import tailwindcss from "@tailwindcss/vite";
 // - If using the username.github.io repo, set base: '/' or remove the base property
 // - Update site URL to match your GitHub Pages URL
 export default defineConfig({
-    site: "https://YOUR_USERNAME.github.io",
-    base: "/nvidia_website", // Change this if your repo has a different name
+    site: "https://rolin-rolin.github.io",
+    base: "/nvidia_portfolio", // Change this if your repo has a different name
     vite: {
         plugins: [tailwindcss()],
     },
